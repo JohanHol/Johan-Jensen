@@ -45,7 +45,7 @@
 
     	<div id="wrapper">
 
-		<?php if($_SESSION["authority"] === "admin"):
+		<?php if($_SESSION["authority"] !== "admin"): //byt utropstecken mot likamedtecken
 
 			include("includes/adminOptions.php");?>
 

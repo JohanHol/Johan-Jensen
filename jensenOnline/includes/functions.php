@@ -12,7 +12,7 @@
 	//Miscellaneous
 
 	function hasLoggedIn(){
-		if(!isset($_SESSION["username"])){ 
+		if(isset($_SESSION["username"])){ //lägg tillbaks utropstecken före isset
             header("Location: index.php");
             return false;
         }
