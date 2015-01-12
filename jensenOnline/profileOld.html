@@ -1,0 +1,82 @@
+<?php
+	session_start();
+
+    include("includes/functions.php");
+
+    if(!hasLoggedIn()){
+    	return;
+    }
+
+	include("includes/head.php");
+	include("includes/checkPost.php");
+?>
+
+<div class="container">
+	
+	<img src="images/logo.jpg" class="pull-left" id="logo">
+	<div class="page-header" id="frontpageHeader">
+		<form action="index.php" method="POST">
+			<button class="btn btn-default pull-right" type="submit" name="logout">Log out</button>
+		</form>
+
+			<h1>Jensen Online <small></br>Ett steg ut i verkligheten</small></h1>
+	</div>
+
+		<nav class="navbar navbar-default" id="navigatonBar" role="navigation">
+			<div class="conainer-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					 data-target="#dicken">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="dicken">
+					<ul class="nav nav-pills nav-justified" id="frontpageMenu">
+						<li role="presentation"><a href="frontpage.php">Hem</a></li>
+						<li role="presentation"><a href="profile.php">Min profil</a></li>
+						<li role="presentation"><a href="#">Inställningar</a></li>
+						<li role="presentation"><a href="#">Inställningar</a></li>
+						<li role="presentation"><a href="#">Inställningar</a></li>
+						<li role="presentation"><a href="#">Inställningar</a></li>		
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+			<?php if($_SESSION["authority"] === "admin"):
+
+					include("includes/adminOptions.php");?>
+
+			<?php elseif($_SESSION["authority"] === "teacher"): ?>
+
+				<h1>teacher</h1>
+
+			<?php elseif($_SESSION["authority"] === "student"): ?>
+				<div class="row">
+					<div class='col-xs-4' id='profileSideBar'>
+						<div class='list-group'>
+						    <a href='#' class='list-group-item'>Dina kurser</a>
+						    <a href='#' class='list-group-item'>Klasslista</a>
+						    <a href='#' class='list-group-item'>Frånvaro</a>
+						    <a href='#' class='list-group-item'>Inkord</a>
+						    <a href='#' class='list-group-item'>Ändra lösenord</a>
+					    </div>
+				    </div>
+				</div>
+
+			<?php else: ?>
+
+				<h1>You shouldn't be here</h1>
+
+			<?php endif; ?>
+
+</div>
+
+<script src="js/adminScript.js?<?php echo time();?>"></script>
+
+</body>
+</html>

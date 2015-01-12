@@ -1,0 +1,64 @@
+/*Ignore this jason, i just used it for testing some stuff out*/
+
+
+#navigatonBar{
+	background:#22313F;
+}
+
+#navigatonBar a{
+	color:white;
+}
+
+#navigatonBar li:hover{
+	background:red;
+}
+
+.container{
+	width:80%;
+}
+
+.page-header{
+	border:none;
+}
+
+#logo{
+	width:100px;
+	height:100px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-top:8px;
+}
+
+.navbar{
+	min-height:0;
+}
+
+.navbar-collapse{
+	padding:0;
+}
+
+.page-header{
+	margin-bottom:0;
+}
+
+#frontPageSideBar{
+	min-height:100%;
+}
+
+#frontPageHeader button{
+	background:url("../images/wood.png");
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+
+#frontPageHeader button:hover{
+	background:#22313F;
+	color:white;
+}
+
+
+
+
+
+

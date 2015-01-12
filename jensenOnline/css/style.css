@@ -1,0 +1,398 @@
+/*General stuff*/
+
+.alignCenter{
+	text-align:center;
+}
+
+#logo{
+	width:63px;
+	height:63px;
+	margin-top:5px;
+}
+
+	/*Menu*/
+
+	.navbar-toggle{
+		width:100%;
+		margin:auto;
+		border:none;
+	}
+
+	.navbar{
+		min-height:0;
+	}
+
+	.icon-bar{
+		background:black;
+	}
+
+	.navbar-default{
+		border:none;
+	}
+
+	.navbar-collapse{
+		padding:0;
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.navbar-header{
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.menu{
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.menu a {
+		font-family: 'Julius Sans One', sans-serif;
+		color:black;
+		font-size: 15px;
+	}
+
+	.border_right{
+	border-right-style:outset;
+	border-right-width:1px;
+	border-right-color:rgba(0,0,0,0.4);
+	}
+
+	#mainMenu a:hover{
+		/*background:rgba(0,0,0,0.3);*/
+		text-decoration:underline;
+	}
+
+	#mainMenu li:hover{
+		background:white;
+	}
+
+	#mainMenu{
+		margin-bottom:2px;
+	}
+
+
+	.page-header{
+		padding:0;
+		border:none;
+	}
+
+	/*Menu end*/
+
+/*General stuff end*/
+
+/*Frontpage specific*/
+
+.header{
+	width:100%;
+	background-color:rgba(255,255,255,1);
+	margin:0;
+}
+
+.header h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 40px;
+	margin:0;
+	padding-bottom:5px;
+}
+
+/*Frontpage specific end*/
+
+
+/*----------*/
+/*LOGIN PAGE*/
+/*----------*/
+
+#login {
+	background:url("../images/loginBGblur.jpg") no-repeat center center fixed;
+	height: 100%;
+	width: 100%;
+}
+
+#loginHeader{
+	background-color:rgba(255,255,255,0);
+	padding-top:30px;
+}
+
+#loginHeader h1{
+	font-size: 55px;
+}
+
+.input-group {
+	margin-top:10px;
+}
+
+#loginButton input{
+	margin-top:10px;
+	background-color:rgba(0,0,0,0.6);
+	border:none;
+}
+
+#forgotButton button {
+	background-color:rgba(0,0,0,0.6);
+	border:none;
+}
+
+#loginButton input:hover {
+	background:#6C7A89;
+	border:none;
+}
+
+#forgotButton button:hover {
+	background:#6C7A89;
+	border:none;
+}
+
+#restoreButtons button:hover {
+	background:rgba(150,40,0,0.4);
+}
+
+#submitButton button:hover {
+	background:rgba(150,40,0,0.4);
+}
+
+#restoreButtons button {
+	background:#96281B;
+	margin-top:10px;
+	border:none;
+}
+
+#submitButton button {
+	background:#96281B;
+	margin-top:10px;
+	border:none;
+}
+
+.container-fluid {
+	padding:10px;
+	text-align: center;
+	color:black;
+}
+
+.input-group-addon {
+	background-color:rgba(0,0,0,0.6);
+	color:white;
+	border:none;
+}
+
+#e_mail_addon {
+	background:#96281B;
+}
+
+#e_mail_addon:hover{
+	background:rgba(150,40,0,0.4);
+}
+
+#loginAlert {
+	margin:0;
+}
+
+#loginHeader{
+	text-align:center;
+}
+
+#loginPanel{
+	margin-top:110px;
+	border:none;
+	padding-top:25px;
+	padding-bottom:25px;
+	background-color:rgba(0,0,0,0.4);
+}
+
+/*----------*/
+/*FRONT PAGE*/
+/*----------*/
+
+#frontPageBody{
+	background:url("../images/frontpageBG.png");
+}
+
+/*------------*/
+/*PROFILE PAGE*/
+/*------------*/
+
+/*Sidebar*/
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background-color:rgba(255,255,255,0.05);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*Sidebar end*/
+
+#profilePageBody{
+	background:url("../images/profilepageBG.png");
+}
+
+#profilePanel{
+	
+	background-color:rgba(255,255,255,0.02);
+	border-color:rgba(255,255,255,0.1);
+	padding:0;
+}
+
+.panel-heading{
+	background-color:rgba(255,255,255,0.03) !important;
+	border-color:rgba(255,255,255,0.2) !important;
+	color:rgba(255,255,255,0.9) !important;
+}
+
+#profilePanel input {
+	background-color:rgba(44, 62, 80,0.4);
+	box-shadow:rgba(0,0,0,0.8) 2px 2px 5px 1px;
+	color:rgba(255,255,255,0.9);
+	border:none;
+}
+
+#profilePanel input:focus{
+	background-color:rgba(34, 49, 63,1);
+}
+
+#profilePanel span {
+	box-shadow:rgba(0,0,0,0.8) 2px 2px 5px 1px;
+	background:rgba(0,0,0,0.2);
+	color:rgba(255,255,255,0.9);
+}
+
+.formSubmits {
+	margin-top:10px;
+	background-color:rgba(0,0,0,0.2) !important;
+}
+
+.formSubmits:hover{
+	background-color:rgba(0,0,0,0.5) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+/*General stuff*/
+
+.alignCenter{
+	text-align:center;
+}
+
+#frontPageBody{
+	background:url("../images/kuk.png");
+}
+
+#logo{
+	width:63px;
+	height:63px;
+	margin-top:5px;
+}
+
+	/*Menu*/
+
+	.navbar-toggle{
+		width:100%;
+		margin:auto;
+		border:none;
+	}
+
+	.navbar{
+		min-height:0;
+	}
+
+	.icon-bar{
+		background:black;
+	}
+
+	.navbar-default{
+		border:none;
+	}
+
+	.navbar-collapse{
+		padding:0;
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.navbar-header{
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.menu{
+		background-color:rgba(255,255,255,0.8);
+	}
+
+	.menu a {
+		font-family: 'Julius Sans One', sans-serif;
+		color:black;
+		font-size: 15px;
+	}
+
+	.border_right{
+	border-right-style:outset;
+	border-right-width:1px;
+	border-right-color:rgba(0,0,0,0.4);
+	}
+
+	#mainMenu a:hover{
+		/*background:rgba(0,0,0,0.3);*/
+		text-decoration:underline;
+	}
+
+	#mainMenu li:hover{
+		background:white;
+	}
+
+	#mainMenu{
+		margin-bottom:2px;
+	}
+
+
+	.page-header{
+		padding:0;
+		border:none;
+	}
+
+	/*Menu end*/
+
+/*General stuff end*/
+
+/*Frontpage specific*/
+
+.header{
+	width:100%;
+	background-color:rgba(255,255,255,1);
+	margin:0;
+}
+
+.header h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 40px;
+	margin:0;
+	padding-bottom:5px;
+}
+
+/*Frontpage specific end*/
+
+
+/*----------*/
+/*LOGIN PAGE*/
+/*----------*/
+
+#login {
+	background:url("../images/loginBGblur.jpg") no-repeat center center fixed;
+	height: 100%;
+	width: 100%;
+}
+
+#loginHeader{
+	background-color:rgba(255,255,255,0);
+	padding-top:30px;
+}
+
+#loginHeader h1{
+	font-size: 55px;
+}
+
+.input-group {
+	margin-top:10px;
+}
+
+#usernameField {
+	margin-top:110px;
+}
+
+#loginButton input{
+	margin-top:10px;
+	background:#2c3e50;
+	border:none;
+}
+
+#forgotButton button {
+	background:#2c3e50;
+	border:none;
+}
+
+#loginButton input:hover {
+	background:#6C7A89;
+	border:none;
+}
+
+#forgotButton button:hover {
+	background:#6C7A89;
+	border:none;
+}
+
+#restoreButtons button {
+	background:#96281B;
+	margin-top:10px;
+	border:none;
+}
+
+#restoreButtons button:hover {
+	background:rgba(150,40,0,0.4);
+}
+
+#submitButton button {
+	background:#96281B;
+	margin-top:10px;
+	border:none;
+}
+
+#submitButton button:hover {
+	background:rgba(150,40,0,0.4);
+}
+
+.container-fluid {
+	padding:10px;
+	text-align: center;
+	color:black;
+}
+
+.input-group-addon {
+	background:#2c3e50;
+	color:white;
+	border:none;
+}
+
+#e_mail_addon {
+	background:#96281B;
+}
+
+#e_mail_addon:hover{
+	background:rgba(150,40,0,0.4);
+}
+
+#loginAlert {
+	margin:0;
+}
+
+#loginHeader{
+	text-align:center;
+}
+
+#loginBox{
+	opacity:0.6;
+}
+
+
+/*----------*/
+/*FRONT PAGE*/
+/*----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
