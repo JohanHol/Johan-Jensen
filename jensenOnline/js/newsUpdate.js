@@ -1,6 +1,6 @@
 
-    document.getElementById("editButt1").addEventListener("click", update1);
-    document.getElementById("editButt11").addEventListener("click", update11);
+    document.getElementById("editBut1").addEventListener("click", update1);
+    document.getElementById("editBut11").addEventListener("click", update11);
 
         function update1() {
             var newText1 = document.getElementById("editRub1");
@@ -13,8 +13,8 @@
             newText11.value = "";}
 
 
-    document.getElementById("editButt2").addEventListener("click", update2);
-    document.getElementById("editButt22").addEventListener("click", update22);
+    document.getElementById("editBut2").addEventListener("click", update2);
+    document.getElementById("editBut22").addEventListener("click", update22);
 
         function update2() {
             var newText2 = document.getElementById("editRub2");
@@ -27,8 +27,8 @@
             newText22.value = "";}
 
 
-    document.getElementById("editButt3").addEventListener("click", update3);
-    document.getElementById("editButt33").addEventListener("click", update33);
+    document.getElementById("editBut3").addEventListener("click", update3);
+    document.getElementById("editBut33").addEventListener("click", update33);
 
         function update3() {
             var newText3 = document.getElementById("editRub3");

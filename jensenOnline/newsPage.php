@@ -57,20 +57,138 @@
 		</nav>
 
     <?php
-        if(isset($_POST['newText'])){
+        if(isset($_POST['editBut1'])){
             try{
 
-                $news_update = $_POST["newRub1"];
+                $rub1_update = $_POST["newRub1"];
 
-                $query = "INSERT INTO news ";
-                $query .= "(rub1) ";
-                $query .= "VALUES (:news)";
+                $query  = "UPDATE news ";
+                $query .= "SET rub1 = :rub1 ";
+                $query .= "WHERE id = 1";
 
                 $ps = $db->prepare($query);
 
                 $ps->execute(array(
 
-                    "news" => $news_update
+                    "rub1" => $rub1_update
+
+                    ));
+            }
+
+            catch(Exception $exception){
+                echo $exception;
+            }
+        }
+   
+
+        if(isset($_POST['editBut11'])){
+            try{
+
+                $text1_update = $_POST["text1"];
+
+                $query = "UPDATE news ";
+                $query .= "SET nyhet1 = :nyhet1 ";
+                $query .= "WHERE id = 1";
+
+                $ps = $db->prepare($query);
+
+                $ps->execute(array(
+
+                    "nyhet1" => $text1_update
+
+                    ));
+            }
+
+            catch(Exception $exception){
+                echo $exception;
+            }
+        }
+
+if(isset($_POST['editBut2'])){
+            try{
+
+                $rub2_update = $_POST["newRub2"];
+
+                $query = "UPDATE news ";
+                $query .= "SET rub2 = :rub2 ";
+                $query .= "WHERE id = 1";
+
+                $ps = $db->prepare($query);
+
+                $ps->execute(array(
+
+                    "rub2" => $rub2_update
+
+                    ));
+            }
+
+            catch(Exception $exception){
+                echo $exception;
+            }
+        }
+   
+
+        if(isset($_POST['editBut22'])){
+            try{
+
+                $text2_update = $_POST["text2"];
+
+                $query = "UPDATE news ";
+                $query .= "SET nyhet2 = :nyhet2 ";
+                $query .= "WHERE id = 1";
+
+                $ps = $db->prepare($query);
+
+                $ps->execute(array(
+
+                    "nyhet2" => $text2_update
+
+                    ));
+            }
+
+            catch(Exception $exception){
+                echo $exception;
+            }
+        }
+
+if(isset($_POST['editBut3'])){
+            try{
+
+                $rub3_update = $_POST["newRub3"];
+
+                $query = "UPDATE news ";
+                $query .= "SET rub3 = :rub3 ";
+                $query .= "WHERE id = 1";
+
+                $ps = $db->prepare($query);
+
+                $ps->execute(array(
+
+                    "rub3" => $rub3_update
+
+                    ));
+            }
+
+            catch(Exception $exception){
+                echo $exception;
+            }
+        }
+   
+
+        if(isset($_POST['editBut33'])){
+            try{
+
+                $text3_update = $_POST["text3"];
+
+                $query = "UPDATE news ";
+                $query .= "SET nyhet3 = :nyhet3 ";
+                $query .= "WHERE id = 1";
+
+                $ps = $db->prepare($query);
+
+                $ps->execute(array(
+
+                    "nyhet3" => $text3_update
 
                     ));
             }
@@ -84,11 +202,11 @@
 		<div class="row">
 			<div class="col-sm-8" >
 				<img src="http://natgeo.dk/files/bonnier-ngm/attach/laptop_screendump-350-px.jpg" alt="" id="mainPicture" class="img-responsive img-rounded">
-                <h2 id="rub1">Lorem Ipsum dolor ist amet 1</h2>
+                <h2 id="rub1">nyhet1</h2>
                 <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra rubriken:</label><br />
                     <input type="textarea" name="newRub1" cols="35" rows="1" id="editRub1">
-                    <input type="submit"  name="newText" value="Edit" id="editButt1">
+                    <input type="submit"  name="editBut1" value="Edit" id="editBut1">
                 </form>
                 <p id="news1">Consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -96,16 +214,20 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur.
                 </p>
+                <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra texten:</label><br />
-                    <textarea name="news" cols="35" rows="4" id="editText1"></textarea>
-                    <input type="submit" value="Edit" id="editButt11">
+                    <textarea name="text1" cols="35" rows="4" id="editText1"></textarea>
+                    <input type="submit" name="editBut11" value="Edit" id="editBut11">
+                </form>
 			</div>
 
 			<div class="col-sm-4" id="frontPageSideBar1">
-				<h2 id="rub2">Lorem Ipsum 2</h2>
+				<h2 id="rub2">nyhet2</h2>
+                <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra rubriken:</label><br />
-                    <textarea name="news" cols="35" rows="1" id="editRub2"></textarea>
-                    <input type="submit" value="Edit" id="editButt2">
+                    <input type="textarea" name="newRub2" cols="35" rows="1" id="editRub2">
+                    <input type="submit" name="editBut2" value="Edit" id="editBut2">
+                </form>
 				<p id="news2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -113,16 +235,20 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+                <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra texten:</label><br />
-                    <textarea name="news" cols="35" rows="4" id="editText2"></textarea>
-                    <input type="submit" value="Edit" id="editButt22">
+                    <textarea name="text2" cols="35" rows="4" id="editText2"></textarea>
+                    <input type="submit" name="editBut22" value="Edit" id="editBut22">
+                </form>
             </div>
 
             <div class="col-sm-4" id="frontPageSideBar2">
-				<h2 id="rub3">Lorem Ipsum 3</h2>
+				<h2 id="rub3">nyhet3</h2>
+                <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra rubriken:</label><br />
-                    <textarea name="news" cols="35" rows="1" id="editRub3"></textarea>
-                    <input type="submit" value="Edit" id="editButt3">
+                    <input type="textarea" name="newRub3" cols="35" rows="1" id="editRub3"></textarea>
+                    <input type="submit" name="editBut3" value="Edit" id="editBut3">
+                </form>
 				<p id="news3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -130,9 +256,11 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+                <form action="newsPage.php" method="POST">
                     <label for="meddelande">Ändra texten:</label><br />
-                    <textarea name="news" cols="35" rows="4" id="editText3"></textarea>
-                    <input type="submit" value="Edit" id="editButt33">
+                    <textarea name="text3" cols="35" rows="4" id="editText3"></textarea>
+                    <input type="submit" name="editBut33" value="Edit" id="editBut33">
+                </form>
 			</div>
 		</div>
 <!--
