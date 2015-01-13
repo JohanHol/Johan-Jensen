@@ -18,5 +18,8 @@
 	if(isset($_POST["addCourse"])){
 		require_once("addCourse.php");
 	}
+    if(isset($_POST["newText"])){
+        require_once("addNewsText.php");
+    }
 	
 ?>
